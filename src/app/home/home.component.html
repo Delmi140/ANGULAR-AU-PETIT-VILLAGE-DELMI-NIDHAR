@@ -5,6 +5,16 @@
     </div>
     <div>
         <h2>catalogue des produits vendus</h2>
+        <div *ngFor="let product of products">
+            {{product.name}}
+            {{product.description}}
+            {{product.price}}
+            {{product.imageUrl}}
+
+        </div>
+     
+       
+        
     </div>
     
 </main>
