@@ -5,7 +5,7 @@
     </div>
     <div>
         <h2>catalogue des produits vendus</h2>
-            <div *ngFor="let product of (products | sortByPrice)">
+            <div *ngFor="let product of (products | sortByPrice | filterByName : filterText)">
                 {{product.name}}
                 {{product.description}}
                 {{product.price}}
@@ -13,7 +13,12 @@
                 <a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> EDIT</a>
             </div>
             <div>
-                <button>Tri</button>
+                <h3>Tri</h3>
+                <button onclick="sortByPrice()">Tri</button>
+            </div>
+            <div>
+                <h3>Recherche</h3>
+                <input type="text" placeholder="Search By Name" class="form-control" [(ngModel)]="filterText">
             </div>
     </div>
 </main>
