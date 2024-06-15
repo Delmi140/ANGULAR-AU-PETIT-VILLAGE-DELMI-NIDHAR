@@ -6,10 +6,14 @@
     <div>
         <h2>catalogue des produits vendus</h2>
             <div *ngFor="let product of products">
-                <a routerLink="/product"> {{product.name}}</a>
-                <a routerLink="/product"> {{product.description}}</a>
-                <a routerLink="/product"> {{product.price}}</a>
-                <a routerLink="/product"> {{product.imageUrl}}</a>
+                {{product.name}}
+                {{product.description}}
+                {{product.price}}
+                {{product.imageUrl}}
+                <a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> EDIT</a>
+                
+
+                
             </div>
     </div>
 </main>
