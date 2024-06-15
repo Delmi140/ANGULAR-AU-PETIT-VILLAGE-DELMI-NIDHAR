@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
+import { SortByPricePipe } from './sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductComponent } from './product/product.component';
     AboutComponent,
     HeaderComponent,
     FooterComponent,
-    ProductComponent
+    ProductComponent,
+    SortByPricePipe
   ],
   imports: [
     BrowserModule,

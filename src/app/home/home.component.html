@@ -5,15 +5,15 @@
     </div>
     <div>
         <h2>catalogue des produits vendus</h2>
-            <div *ngFor="let product of products">
+            <div *ngFor="let product of (products | sortByPrice)">
                 {{product.name}}
                 {{product.description}}
                 {{product.price}}
                 {{product.imageUrl}}
                 <a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> EDIT</a>
-                
-
-                
+            </div>
+            <div>
+                <button>Tri</button>
             </div>
     </div>
 </main>
