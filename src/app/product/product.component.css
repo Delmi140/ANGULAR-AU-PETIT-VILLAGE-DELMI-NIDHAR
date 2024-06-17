@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Comfortaa:wght@300..700&family=Monoton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rye&display=swap');
+
+@font-face {
+    font-family: "bubbleboddyneue-regular trial";
+    src:
+      local("Tri"),
+      url("../../font/bubbleboddyneue-regular\ trial.ttf") format("truetype") tech(color-COLRv1),
+      
+  }
+
+  .h2-mon-produit{
+    font-family:"bubbleboddyneue-regular trial"
+  }
+  .fiche-produit{
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    flex-direction:column;
+   
+    
+  }
+  .fiche-produit-contenaire{
+    background-color:#DA001E ;
+  }
+  .fiche-produit-generale{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#DA001E ;
+  }

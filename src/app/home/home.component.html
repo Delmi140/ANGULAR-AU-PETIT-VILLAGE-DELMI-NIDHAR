@@ -10,6 +10,7 @@
       <div class="contenaire-produits">
         <div class="h2-produit">
           <h2>catalogue des produits vendus</h2>
+          
         </div>
         <div class="table-contenaire">
           <table class="table table-bordered" >
@@ -27,7 +28,7 @@
               <td>{{product.name}}</td>
               <td>{{product.description}}</td>
               <td>{{product.price}}</td>
-              <td><a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> <button type="button" class="btn btn-primary">Lien</button></a></td>
+              <td><a routerLink="product/ {{product.name}} {{product.price}} {{product.description}} "> <button type="button" class="btn btn-primary">Lien</button></a></td>
             </tr>
           </table>
         </div>

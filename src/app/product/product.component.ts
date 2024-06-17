@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductComponent implements OnInit{
  productId: any;
+ productName: any;
  
  
 
@@ -15,6 +16,7 @@ constructor(private activated: ActivatedRoute) {}
 
 ngOnInit(): void {
   this.productId = this.activated.snapshot.paramMap.get('id')
+  
 }
 
 }
