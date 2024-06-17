@@ -24,3 +24,62 @@ h1{
 h2{
     font-family:"bubbleboddyneue-regular trial"
 }
+h3{
+    font-family:"bubbleboddyneue-regular trial"
+}
+
+.contenaire-présentation{
+    text-align: center;
+    height: 300px;
+    width: 800px;
+    border: solid;
+
+    
+}
+
+.présentation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FDD90B;
+    height: 400px;
+
+}
+
+table{
+    width: 1000px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.table-produits{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 700px;
+    background-color: #DA001E;
+
+}
+
+.h2-produit{
+    text-align: center;
+    
+   
+}
+
+.contenaire-produits{
+   height: 500px;
+   width: 1100px;
+   border: solid;
+   background-color: white;
+   
+}
+
+.table-contenaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bg-success{
+    font-family:"bubbleboddyneue-regular trial"
+}

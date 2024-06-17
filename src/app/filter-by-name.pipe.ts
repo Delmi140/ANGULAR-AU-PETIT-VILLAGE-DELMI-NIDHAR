@@ -5,12 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterByNamePipe implements PipeTransform {
 
-  transform(products:any[] = [], filterText:string)  {
-    if(products.length === 0 || filterText === '') {
+  transform(products:any[] = [], position_held:string)  {
+    if(products.length === 0 || position_held === '') {
       return products;
 
     }else{
-      return products.filter((product) => {return product.name.toLowercase() === filterText.toLowerCase()})
+      return products.filter((product) => {return product.name.toLowercase() === position_held.toLowerCase()})
     }
     
   }

@@ -1,17 +1,56 @@
 <main>
-    <div>
-        <h1>Au petit village</h1>
-        <p>“Au petit village” est une entreprise qui confectionne des figurines inspirées de la bande dessinée Astérix et Obélix.</p>
+   
+    <div class="présentation">
+        <div class="contenaire-présentation">
+         <h1>Au petit village</h1>
+         <p> <strong>Au petit village</strong>  est une entreprise qui confectionne des figurines inspirées de la bande dessinée Astérix et Obélix.  Le savoir-faire et le soucis du détails accompagnent constamment nos équipes expertes pour vous apporter des collections et produits de qualité sur les thèmes ludiques, historiques et culturels qui vous passionnent le plus.</p>
+        </div>
     </div>
+    <div class="table-produits">
+      <div class="contenaire-produits">
+        <div class="h2-produit">
+          <h2>catalogue des produits vendus</h2>
+        </div>
+        <div class="table-contenaire">
+          <table class="table table-bordered" >
+            <tr class="bg-success">
+              <th>Id</th>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th >Prix</th> 
+              <th>Lien</th>
+            </tr>
+            <tr *ngFor="let product of (products | sortByPrice | filterByName : position_held)" >
+              <td>{{product.id}}</td>
+              <td>{{product.imageUrl}}</td>
+              <td>{{product.name}}</td>
+              <td>{{product.description}}</td>
+              <td>{{product.price}}</td>
+              <td><a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> <button type="button" class="btn btn-primary">Lien</button></a></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h3>Recherche</h3>
+          <input type="text" placeholder="Search By Name" class="form-control" [(ngModel)]="position_held">
+
+        </div>       
+          
+      </div>
+    </div>
+    <!--
     <div>
+      <div class="h2-produit">
         <h2>catalogue des produits vendus</h2>
-            <div *ngFor="let product of (products | sortByPrice | filterByName : filterText)">
-                {{product.name}}
-                {{product.description}}
-                {{product.price}}
-                {{product.imageUrl}}
-                <a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> EDIT</a>
-            </div>
+      </div>
+      <div *ngFor="let product of (products | sortByPrice | filterByName : filterText)">
+          {{product.name}}
+          {{product.description}}
+          {{product.price}}
+          {{product.imageUrl}}
+           <a routerLink="product/{{product.id}} {{product.name}} {{product.price}} {{product.description}}"> EDIT</a>
+      </div>
             <div>
                 <h3>Tri</h3>
                 <button onclick="sortByPrice()">Tri</button>
@@ -21,4 +60,5 @@
                 <input type="text" placeholder="Search By Name" class="form-control" [(ngModel)]="filterText">
             </div>
     </div>
+  -->
 </main>

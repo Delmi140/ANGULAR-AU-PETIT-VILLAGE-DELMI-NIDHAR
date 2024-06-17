@@ -11,7 +11,7 @@ import { ProductsService, } from '../products.service';
 
 
 export class HomeComponent implements OnInit {
-  filterText:string='';
+  position_held:string='';
   products: any[] = [];
   constructor(private productsService: ProductsService) { }
 
